@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: test-terraform-private-modules-action
+  description: Forked from https://github.com/philips-labs/terraform-private-modules-action
+  annotations:
+    github.com/project-slug: Bandwidth/test-terraform-private-modules-action
+  organization: BW
+  costCenter: Development - Software Infra
+  platformType: undefined
+  buildPlatform: GitHub Actions
+spec:
+  type: Infrastructure as Code
+  owner: github/band-swi
+  lifecycle: Prototype
+  dependsOn:
+    - resource:platform/GitHub Actions
+    - resource:cost-center/Development - Software Infra
